@@ -350,18 +350,21 @@
 </div>
 
 <script>
-  // =====================================================================
-  // PASTE YOUR FIREBASE PROJECT CONFIG HERE (from Firebase Console)
-  // =====================================================================
-  const firebaseConfig = {
-    apiKey: "PASTE_YOUR_API_KEY_HERE",
-    authDomain: "PASTE_YOUR_AUTH_DOMAIN_HERE",
-    databaseURL: "PASTE_YOUR_DATABASE_URL_HERE",
-    projectId: "PASTE_YOUR_PROJECT_ID_HERE",
-    storageBucket: "PASTE_YOUR_STORAGE_BUCKET_HERE",
-    messagingSenderId: "PASTE_YOUR_SENDER_ID_HERE",
-    appId: "PASTE_YOUR_APP_ID_HERE"
-  };
+  
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDY8VLC7OSEe_lh3eYo9R0k2DszrkH2c-g",
+  authDomain: "dobertaco.firebaseapp.com",
+  databaseURL: "https://dobertaco-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "dobertaco",
+  storageBucket: "dobertaco.firebasestorage.app",
+  messagingSenderId: "659559064037",
+  appId: "1:659559064037:web:8105b60a8703400a34cf0c"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
   // =====================================================================
 
   let db = null;
